@@ -12,3 +12,11 @@ dependencies = [
     "cython>=3.0.12",
     "duckdb>=1.2.1",
 ]
+
+[dependency-groups]
+dev = [
+    "ecopystats",
+]
+
+[tool.uv.sources]
+ecopystats = { workspace = true }
