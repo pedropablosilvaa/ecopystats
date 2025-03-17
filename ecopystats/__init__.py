@@ -6,6 +6,11 @@ Python package for ecological statistics.
 
 """
 
+__author__ = """Pedro Pablo Silva Antilef"""
+__email__ = "pedropablosilvaa@gmail.com"
+__version__ = "0.1.0"
+
+
 import logging
 import os
 
@@ -16,6 +21,7 @@ logger = logging.getLogger(__name__)
 
 _submodules = [
     "diversity",
+    "distance"
 ]
 
 # from .diversity import shannon_diversity, simpson_diversity
