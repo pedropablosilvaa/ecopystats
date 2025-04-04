@@ -175,7 +175,13 @@ def diversity(
     labels = None
     is_dataframe = isinstance(data, pd.DataFrame)
     if is_dataframe:
-        labels = data.index if axis == 0 else data.columns
+        if axis == 0:
+            # we're computing 1 value per column => use columns as the Series index
+            labels = data.columns
+        else:
+            # axis=1 => 1 value per row => use index
+            labels = data.index
+
         arr = data.values
     else:
         arr = np.asanyarray(data)

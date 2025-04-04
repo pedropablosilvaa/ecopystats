@@ -1,6 +1,6 @@
 [project]
 name = "ecopystats"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -11,6 +11,7 @@ dependencies = [
     "typing>=3.10.0.0",
     "cython>=3.0.12",
     "duckdb>=1.2.1",
+    "build>=1.2.2.post1",
 ]
 
 [dependency-groups]

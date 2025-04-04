@@ -17,14 +17,8 @@ import os
 
 logger = logging.getLogger(__name__)
 
-#
 
-_submodules = [
-    "diversity",
-    "distance"
-]
-
-# from .diversity import shannon_diversity, simpson_diversity
+from .diversity import diversity
 # from .distance import braycurtis_distance, jaccard_distance, sorensen_distance
 # from .rarefaction import rarefaction_curve
 # from .stats import ...
